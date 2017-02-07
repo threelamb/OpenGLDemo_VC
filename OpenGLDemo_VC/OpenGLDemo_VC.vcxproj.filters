@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{668b2fa6-b567-40bb-bff7-663af9c764d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\Include">
+      <UniqueIdentifier>{f8419739-ad26-43fd-9675-3d09036e56cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\Include\GLEW">
+      <UniqueIdentifier>{a3803f4a-1235-4f16-a091-529840940fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\Include\GLFW">
+      <UniqueIdentifier>{937043dc-6c45-4575-9c50-cbb0258ee771}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\Lib">
+      <UniqueIdentifier>{2de9d00e-b2bc-4cca-b8e6-2cf160f1ec66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{b47a620c-0c7d-4aa3-9c31-ab1a66f0c1c1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLDemo_VC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="0.BaseDemo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="1.HelloWindow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestDemo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="4.Rectangle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="2.Triangle_OldAPI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="3.Triangle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="4.1.Triangle_2triangle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="4.2.Triangle_2VAO_2VBO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="4.3.Triangle_2ShaderProgram.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5.Triangle_StudyShader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5.1.Triangle_StudyShader_uniform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5.2.Triangle_StudyShader_VertexAttribPointer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\Include\GLFW\glfw3.h">
+      <Filter>Libraries\Include\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\Include\GLEW\eglew.h">
+      <Filter>Libraries\Include\GLEW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\Include\GLEW\glew.h">
+      <Filter>Libraries\Include\GLEW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\Include\GLEW\glxew.h">
+      <Filter>Libraries\Include\GLEW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\Include\GLEW\wglew.h">
+      <Filter>Libraries\Include\GLEW</Filter>
+    </ClInclude>
+    <ClInclude Include="0.BaseDemo2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5.3.Triangle_ShaderInFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="6.Triangle_Texture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLDemo_VC.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0.BaseDemo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1.HelloWindow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDemo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="4.Rectangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="4.1.Triangle_2triangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="3.Triangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="2.Triangle_OldAPI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="4.2.Triangle_2VAO_2VBO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="4.3.Triangle_2ShaderProgram.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5.Triangle_StudyShader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5.1.Triangle_StudyShader_uniform.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5.2.Triangle_StudyShader_VertexAttribPointer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="0.BaseDemo2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5.3.Triangle_ShaderInFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="6.Triangle_Texture.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OpenGLDemo_VC.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Libraries\Lib\glew32.lib">
+      <Filter>Libraries\Lib</Filter>
+    </Library>
+    <Library Include="..\Libraries\Lib\glew32s.lib">
+      <Filter>Libraries\Lib</Filter>
+    </Library>
+    <Library Include="..\Libraries\Lib\glfw3.lib">
+      <Filter>Libraries\Lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Shaders\5.3.shader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\Shaders\5.3.shader.vs">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
