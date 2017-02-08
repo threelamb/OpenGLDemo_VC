@@ -94,7 +94,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32s.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -153,6 +153,7 @@
     <ClInclude Include="..\Libraries\Include\GLEW\glxew.h" />
     <ClInclude Include="..\Libraries\Include\GLEW\wglew.h" />
     <ClInclude Include="..\Libraries\Include\GLFW\glfw3.h" />
+    <ClInclude Include="..\Libraries\Include\SOIL\SOIL.h" />
     <ClInclude Include="0.BaseDemo.h" />
     <ClInclude Include="1.HelloWindow.h" />
     <ClInclude Include="5.2.Triangle_StudyShader_VertexAttribPointer.h" />
@@ -160,6 +161,7 @@
     <ClInclude Include="5.3.Triangle_ShaderInFile.h" />
     <ClInclude Include="OpenGLDemo_VC.h" />
     <ClInclude Include="4.Rectangle.h" />
+    <ClInclude Include="6.1.Rectangle_TextureUnit.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -171,7 +173,7 @@
     <ClInclude Include="4.3.Triangle_2ShaderProgram.h" />
     <ClInclude Include="5.Triangle_StudyShader.h" />
     <ClInclude Include="5.1.Triangle_StudyShader_uniform.h" />
-    <ClInclude Include="6.Triangle_Texture.h" />
+    <ClInclude Include="6.Rectangle_Texture.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="0.BaseDemo.cpp" />
@@ -181,6 +183,7 @@
     <ClCompile Include="5.3.Triangle_ShaderInFile.cpp" />
     <ClCompile Include="OpenGLDemo_VC.cpp" />
     <ClCompile Include="4.Rectangle.cpp" />
+    <ClCompile Include="6.1.Rectangle_TextureUnit.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -196,7 +199,7 @@
     <ClCompile Include="4.3.Triangle_2ShaderProgram.cpp" />
     <ClCompile Include="5.Triangle_StudyShader.cpp" />
     <ClCompile Include="5.1.Triangle_StudyShader_uniform.cpp" />
-    <ClCompile Include="6.Triangle_Texture.cpp" />
+    <ClCompile Include="6.Rectangle_Texture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="OpenGLDemo_VC.rc" />
@@ -205,10 +208,19 @@
     <Library Include="..\Libraries\Lib\glew32.lib" />
     <Library Include="..\Libraries\Lib\glew32s.lib" />
     <Library Include="..\Libraries\Lib\glfw3.lib" />
+    <Library Include="..\Libraries\Lib\SOIL.lib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Shaders\5.3.shader.frag" />
     <None Include="..\Shaders\5.3.shader.vs" />
+    <None Include="..\Shaders\6.1.shader.frag" />
+    <None Include="..\Shaders\6.1.shader.vs" />
+    <None Include="..\Shaders\6.shader.frag" />
+    <None Include="..\Shaders\6.shader.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Texture\awesomeface.png" />
+    <Image Include="..\Texture\container.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

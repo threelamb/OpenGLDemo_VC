@@ -1,7 +1,6 @@
 #include "stdafx.h"
 #include "0.BaseDemo2.h"
 
-
 BaseDemo2::BaseDemo2()
 {
 }
@@ -50,6 +49,7 @@ int BaseDemo2::Display()
 
 	this->PrePareShader();
 	this->PrePareVAO();
+	this->PrePareTexture();
 
 	// Game loop
 	while (!glfwWindowShouldClose(window))
@@ -83,6 +83,11 @@ void BaseDemo2::PrePareVAO()
 {
 }
 
+void BaseDemo2::PrePareTexture()
+{
+
+}
+
 void BaseDemo2::Draw()
 {
 }
@@ -96,4 +101,20 @@ void BaseDemo2::key_callback(GLFWwindow* window, int key, int scancode, int acti
 	std::cout << key << std::endl;
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
 		glfwSetWindowShouldClose(window, GL_TRUE);
+	if (key == GLFW_KEY_UP && action == GLFW_PRESS)
+	{
+		mixValue += 0.1f;
+		if (mixValue >= 1.0f)
+		{
+			mixValue = 1.0f;
+		}
+	}
+	if (key == GLFW_KEY_DOWN && action == GLFW_PRESS)
+	{
+		mixValue -= 0.1f;
+		if (mixValue <= 0.0f)
+		{
+			mixValue = 0.0f;
+		}
+	}
 }

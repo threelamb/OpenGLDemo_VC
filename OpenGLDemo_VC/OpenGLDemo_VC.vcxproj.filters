@@ -31,6 +31,12 @@
     <Filter Include="Shaders">
       <UniqueIdentifier>{b47a620c-0c7d-4aa3-9c31-ab1a66f0c1c1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Libraries\Include\SOIL">
+      <UniqueIdentifier>{52f8ffc1-f4b5-4403-9a1e-b922b96b2157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Texture">
+      <UniqueIdentifier>{cb905f1c-2d8c-40d3-95fb-68b423739263}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -105,7 +111,13 @@
     <ClInclude Include="5.3.Triangle_ShaderInFile.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="6.Triangle_Texture.h">
+    <ClInclude Include="..\Libraries\Include\SOIL\SOIL.h">
+      <Filter>Libraries\Include\SOIL</Filter>
+    </ClInclude>
+    <ClInclude Include="6.Rectangle_Texture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="6.1.Rectangle_TextureUnit.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -161,7 +173,10 @@
     <ClCompile Include="5.3.Triangle_ShaderInFile.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="6.Triangle_Texture.cpp">
+    <ClCompile Include="6.Rectangle_Texture.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="6.1.Rectangle_TextureUnit.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -180,6 +195,9 @@
     <Library Include="..\Libraries\Lib\glfw3.lib">
       <Filter>Libraries\Lib</Filter>
     </Library>
+    <Library Include="..\Libraries\Lib\SOIL.lib">
+      <Filter>Libraries\Lib</Filter>
+    </Library>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Shaders\5.3.shader.frag">
@@ -188,5 +206,25 @@
     <None Include="..\Shaders\5.3.shader.vs">
       <Filter>Shaders</Filter>
     </None>
+    <None Include="..\Shaders\6.shader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\Shaders\6.shader.vs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\Shaders\6.1.shader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\Shaders\6.1.shader.vs">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Texture\container.jpg">
+      <Filter>Texture</Filter>
+    </Image>
+    <Image Include="..\Texture\awesomeface.png">
+      <Filter>Texture</Filter>
+    </Image>
   </ItemGroup>
 </Project>

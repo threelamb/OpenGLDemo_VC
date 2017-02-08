@@ -1,14 +1,15 @@
 #pragma once
 #include "0.BaseDemo2.h"
-class Triangle_Texture :
+class Rectangle_Texture :
 	public BaseDemo2
 {
 public:
-	Triangle_Texture();
-	~Triangle_Texture();
+	Rectangle_Texture();
+	~Rectangle_Texture();
 protected:
 	void PrePareShader();
 	void PrePareVAO();
+	void PrePareTexture();
 	void Draw();
 };
 

@@ -11,8 +11,9 @@
 #include "5.Triangle_StudyShader.h"
 #include "5.1.Triangle_StudyShader_uniform.h"
 #include "5.2.Triangle_StudyShader_VertexAttribPointer.h"
-#include "5.3.Triangle_ShaderInFile.h";
-#include "6.Triangle_Texture.h"
+#include "5.3.Triangle_ShaderInFile.h"
+#include "6.Rectangle_Texture.h"
+#include "6.1.Rectangle_TextureUnit.h"
 
 void Display_HelloWindow();
 void Display_Triangle_OldAPI();
@@ -27,10 +28,11 @@ void Display_Triangle_StudyShader_uniform();
 void Display_Triangle_StudyShader_VertexAttribPointer();
 void Display_Triangle_ShaderInFile();
 void Display_Triangle_Texture();
+void Display_Rectangle_TextureUnit();
 // The MAIN function, from here we start the application and run the game loop
 int main()
 {
-	Display_Triangle_Texture();
+	Display_Rectangle_TextureUnit();
 	return 0;
 }
 
@@ -121,7 +123,14 @@ void Display_Triangle_ShaderInFile()
 
 void Display_Triangle_Texture()
 {
-	Triangle_Texture* obj = new Triangle_Texture();
+	Rectangle_Texture* obj = new Rectangle_Texture();
+	obj->Display();
+	obj->Dispose();
+}
+
+void Display_Rectangle_TextureUnit()
+{
+	Rectangle_TextureUnit* obj = new Rectangle_TextureUnit();
 	obj->Display();
 	obj->Dispose();
 }

@@ -45,6 +45,6 @@ public:
 };
 
 // Is called whenever a key is pressed/released via GLFW
-// 要是线程函数不需要用到类成员的数据，或者从参数传入。则刻意声明为全局函数
+// 要是线程函数不需要用到类成员的数据，或者从参数传入。则可以声明为全局函数
 void key_callback2(GLFWwindow* window, int key, int scancode, int action, int mode);
 
